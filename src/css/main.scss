@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'variables';
+// @import 'fonts';
+@import 'color';
+@import 'mixins';
+
+body {
+	font-family: 'Lato', sans-serif;	
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  // display: flex;
+  // flex-direction: column;
+}
+
+.container {
+	// flex: 1 1 auto;
+}
+.content {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0px auto;
+}
+
+
+
+@import 'bloks/header.scss';
+@import 'bloks/about.scss';
+@import 'bloks/brands.scss';
+@import 'bloks/twitter.scss';
+@import 'bloks/footer.scss';
+@import 'bloks/shop.scss';
