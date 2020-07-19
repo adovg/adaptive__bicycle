@@ -16,13 +16,36 @@
 			text-align: center;
 				span {
 					font-weight: 500;
+					font-style: italic;
+					color: #848789;
 				}
 		}
 		p {
 			color:#848789;
 			font-style: italic;
 			font-size: 24px;
-			align: center;
+			text-align: center;
 			margin-top: 25px;
+			margin-bottom: 100px;
 		}
+}
+.twitter__loader {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+.twitter__circle {
+	display: block;
+	width: 11px;
+  	height: 11px;
+  	border: 1px solid #c8c8c8;
+	background-color: #fafafa;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+.twitter__circle-full {
+	width: 11px;
+	height: 11px;
+	background-color: #a9afb3;
+	
 }
