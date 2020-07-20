@@ -1,52 +1,31 @@
 
+// .parent {
+//     display: grid;
+//     grid-template-columns: repeat(6, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-column-gap: 0px;
+//     grid-row-gap: 0px;
+// }
 
-
-.parent {
+.shop__wrap {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px;    
 }
 
-.div1 {
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-row-end: 2;
-	grid-column-end: 2;
-    // grid-area: 1 / 1 / 2 / 2;
+.shop_item {
+    display: flex;
+    background: #64c29e;
+    background-image: url('../../../build/img/gal-logo.svg') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
-.div2 {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
-    grid-area: 1 / 3 / 3 / 4;
-}
-
-.div4 {
-    grid-area: 1 / 4 / 3 / 5;
-}
-
-.div5 {
-    grid-area: 1 / 5 / 2 / 7;
-}
-
-.div6 {
-    grid-area: 2 / 1 / 3 / 3;
-}
-
-.div7 {
-    grid-area: 2 / 5 / 3 / 6;
-}
-
-.div8 {
-    grid-area: 2 / 6 / 3 / 7;
-}
-
+  
 .shop_item img {
-    background: #000;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -54,7 +33,49 @@
     top: 0;
     left: 0;
     z-index: 1;
+    transition: opacity 500ms;
+    &:hover {
+        opacity: 0.5;
+   }
 }
+
+.shop_item-1 {
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 2;
+	grid-column-end: 2;
+    // grid-area: 1 / 1 / 2 / 2;
+}
+
+.shop_item-2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.shop_item-3 {
+    grid-area: 1 / 3 / 3 / 4;
+}
+
+.shop_item-4 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.shop_item-5 {
+    grid-area: 1 / 5 / 2 / 7;
+}
+
+.shop_item-6 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.shop_item-7 {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+.shop_item-8 {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+
 
 .shop__discover {
     background-color: #282f35;
@@ -64,12 +85,18 @@
 
 .shop__btn {
     margin: 75px auto 75px auto;
-    //padding: 20px 55px 20px 55px;
-    width: 185px;
-    height: 10px;
+    padding: 20px 55px 20px 55px;
+    border: 1px solid grey;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 2.8px;
     text-align: center;
+    background-color: #282f35;
     color: #ffffff;
+    text-transform: uppercase;
+    transition: filter 800ms;
+        &:hover {
+            filter: brightness(85%); 
+        }
 }
+
