@@ -49,3 +49,22 @@
 	background-color: #a9afb3;
 	
 }
+
+@media (max-width: 768px) {
+	.twitter__about {
+			a {
+				margin-top: 70px;
+				margin-bottom: 25px;
+			}
+			h3 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 18px;
+				text-align: center;
+				margin-top: 25px;
+
+				margin-bottom: 50px;
+			}
+	}
+}

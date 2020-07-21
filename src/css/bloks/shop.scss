@@ -1,30 +1,22 @@
 
-// .parent {
-//     display: grid;
-//     grid-template-columns: repeat(6, 1fr);
-//     grid-template-rows: repeat(2, 1fr);
-//     grid-column-gap: 0px;
-//     grid-row-gap: 0px;
-// }
-
 .shop__wrap {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;    
+    grid-row-gap: 0px;
 }
 
 .shop_item {
     display: flex;
     background: #64c29e;
-    background-image: url('../../../build/img/gal-logo.svg') ;
+    background-image: url('../../../build/img/gal-logo.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
 }
 
-  
+
 .shop_item img {
     width: 100%;
     height: 100%;
@@ -34,16 +26,17 @@
     left: 0;
     z-index: 1;
     transition: opacity 500ms;
+
     &:hover {
         opacity: 0.5;
-   }
+    }
 }
 
 .shop_item-1 {
-	grid-row-start: 1;
-	grid-column-start: 1;
-	grid-row-end: 2;
-	grid-column-end: 2;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
     // grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -95,8 +88,55 @@
     color: #ffffff;
     text-transform: uppercase;
     transition: filter 800ms;
-        &:hover {
-            filter: brightness(85%); 
-        }
+
+    &:hover {
+        filter: brightness(85%);
+    }
 }
 
+@media (max-width: 768px) {
+    .shop__wrap {
+        display: grid;
+        grid-template-columns: repeat(4, 2fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .shop_item-1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 2;
+        // grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .shop_item-3 {
+        grid-area: 1 / 2 / 2 / 3;
+
+    }
+
+    .shop_item-2 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .shop_item-5 {
+        grid-area: 1 / 4 / 2 / 5;
+    }
+
+    .shop_item-4 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .shop_item-7 {
+        grid-area: 2 / 2 / 2 / 3;
+    }
+
+    .shop_item-6 {
+        grid-area: 2 / 3 / 2 / 4;
+    }
+
+    .shop_item-8 {
+        grid-area: 2 / 4 / 2 / 5;
+    }
+}
